@@ -1,78 +1,14 @@
-#######################################################
-#																																	#
-#									Mp3 and Mp4 Downloader												#
-#												Version 1.5																#
-#																																	#
-# Author: ForChat																										#
-# Copyright © 2016 All Rights Reserved.																#
-#######################################################
-#																																	#
-# ############																									#
-# REQUIREMENTS																									#
-# ############																									#
-#  "youtube-dl" and "ffmpeg" package installed.												#
-#																																#
-# ##########																										#
-# CHANGELOG																										#
-###########																										#
-# 1.0																														  #
-# -First release																										#
-# 1.1																															#
-# -Error message now with full reply.																	#
-# -Fixed some bugs.																								#
-# 1.2																															#
-# -Added block and unblock commands for owner.		                              	#
-# -Fixed bug.																											#
-# 1.3																														 #
-# -Modified commands. Now you can use <botnick command>					#
-#  Example: "mp3 on" or 'mp3 off"													            	  #
-# 1.4																														 #
-# -Move Block and unblock commands to private msg. Now nobady          #
-#  knows who you are blocking.       																	#
-# 1.5																														 #
-# -Fixed Unicode characters bug. (Bug from youtube-dl)								#
-#  -Added Repeat protection.       																		#
-#																															  #
-#  (Type "<botnick> help" in channel for command list)								#
-#																																#
-# #######																											#
-# CONTACT																											#
-# #######																											#
-#  If you have any suggestions, comments, questions or report bugs,		#
-#  you can find me on IRC @ForChat Network										#
-#																																#
-#  /server irc.forchat.id:6667   Nick: ucup										  #
-#																																#
-######################################################
-
 package require http
 package require tls
 
 setudef flag mp3
 
-###############################################################################
-### Settings ###
-###############################################################################
-
-# This is for antiflood trigger. Set how long user can use next command (time in second).
 set tube(rest) 35
 
-# This is link for download the mp3 or mp4 file.
 set linkdl "http://69.85.88.188/download"
 
-# This is your public_html folder patch
 set path "/var/www/html/download"
 set piles "/home/abocy"
-
-###############################################################################
-### End of Settings ###
-###############################################################################
-
-###############################################################################
-#
-#      DON'T CHANGE ANYTHING BELOW EVEN YOU KNOW TCL.
-#
-###############################################################################
 
 bind pub - .dl mptiga
 bind pub n .update liat_versi
