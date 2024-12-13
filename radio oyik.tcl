@@ -149,4 +149,4 @@ putserv "Privmsg Radio :bcast %bold$dj%bold On yang bertugas!!!"
 }}
 proc pub_dj { nick uhost hand chan arg } { global radiochans; if {([lsearch -exact [string tolower $radiochans] [string tolower $chan]] != -1) || ($radiochans == "")} { dj $nick  }}
 
-putlog "radio.tcl loaded"
+putlog "radio.tcl loaded by ucup"
