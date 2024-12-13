@@ -7,8 +7,8 @@ package require http
 package require json
 package require tls
 
-set key1 "AIzaSyBlnL8h7FnukIEj9_QLtunU6x2AlO0H9vQ"
-set key "AIzaSyDlm0jcPyz0V25-3a51RX4b6gz5tx9bfhQ"
+set key1 "APIKEY YOUTUBE"
+set key "APIKEY YOUTUBE"
 
 ## Channel Flags ---
 setudef flag req
