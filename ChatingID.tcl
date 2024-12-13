@@ -994,6 +994,6 @@ set djcek [lindex $ids 23]
 return $djcek
 }
 
-putlog "acs.tcl loaded"
+putlog "ChatingID.tcl loaded"
 
 
