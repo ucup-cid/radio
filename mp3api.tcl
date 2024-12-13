@@ -51,7 +51,7 @@ package require json
 package require http
 package require tls
 
-set key "AIzaSyBlnL8h7FnukIEj9_QLtunU6x2AIO0H9vQ"
+set key "APIKEY YOUTUBE"
 
 setudef flag mp3
 
